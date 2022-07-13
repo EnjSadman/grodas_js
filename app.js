@@ -1,6 +1,6 @@
 'use strict';
 
-const BASE_URL = './__in/data.json';
+const BASE_URL = './in/data.json';
 
 const fetcher = async (specify) => {
   const response = await fetch(BASE_URL);
@@ -28,7 +28,7 @@ const mapper = async () => {
     const item = document.createElement('div');
     const tags = element.tags.map(singleTag => '#' + singleTag);
     item.className = 'shadowCard'
-    item.style = `background-image : url(./__in/${element.image})`;
+    item.style = `background-image : url(./in/${element.image})`;
     item.innerHTML = (
       ` 
       <div class="shadowCard__info">
@@ -45,7 +45,7 @@ const mapper = async () => {
     const item = document.createElement('div');
     const tags = element.tags.map(singleTag => '#' + singleTag);
     item.className = 'shadowCard'
-    item.style = `background-image : url(./__in/${element.image})`;
+    item.style = `background-image : url(./in/${element.image})`;
     item.innerHTML = (
       ` 
       <input id=${element.id + tags[0] + "best"} type="checkbox" class="check__box">
@@ -69,7 +69,7 @@ const mapper = async () => {
       `
         <input id=${element.id + tags[0] + "aged"} type="checkbox" class="check__box">
         <label class="star__label star__label--aged" for=${element.id + tags[0] + "aged"}></label>
-        <img class="card__image" src="./__in/${element.image}">
+        <img class="card__image" src="./in/${element.image}">
         <p class="card__title">${element.title}</p>
         <p class="card__tags">${tags.join(' ')}</p>
       `

@@ -211,11 +211,11 @@ html {
   }
 
   .check__box + label {
-    content: url(./__in/icons/star-regular.svg);
+    content: url(./in/icons/star-regular.svg);
   }
   
   .check__box:checked + label {
-    content: url(./__in/icons/star-solid.svg);
+    content: url(./in/icons/star-solid.svg);
   }
   
   .star__label {
