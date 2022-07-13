@@ -95,7 +95,7 @@ const domInformation = () => {
     resultByTagLength[arrayOfTags[i].tagName.length].push(arrayOfTags[i].tagName);
   }
 
-  console.log(resultByName, resultByTagLength)
+  console.log(numOfDomElements, resultByName, resultByTagLength)
 };
 
 domInformation();
